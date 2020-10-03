@@ -9,5 +9,6 @@
         <module name="SSU_SoftwareTesting" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

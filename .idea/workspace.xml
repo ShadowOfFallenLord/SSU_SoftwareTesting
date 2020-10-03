@@ -32,7 +32,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="D:\Program Files (x86)\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -52,7 +52,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LoginTest.Test">
     <configuration name="WorkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WorkTest" />
       <module name="SSU_SoftwareTesting" />
@@ -60,8 +65,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSU_SoftwareTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test1" />
+      <option name="MAIN_CLASS_NAME" value="Test1.LoginTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.Test" />
         <item itemvalue="Application.WorkTest" />
       </list>
     </recent_temporary>
@@ -94,26 +116,54 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="120" y="65" key="#Project_Structure/0.0.1280.984@0.0.1280.984" timestamp="1601493270408" />
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1601494443957">
+    <state x="327" y="415" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601749686315">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1601494443957" />
-    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1601494443956">
+    <state x="327" y="415" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.984@0.0.1280.984" timestamp="1601749686315" />
+    <state x="423" y="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601749727950">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1601494443956" />
-    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1601494443956">
+    <state x="423" y="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.984@0.0.1280.984" timestamp="1601749727950" />
+    <state width="1236" height="320" key="GridCell.Tab.0.bottom" timestamp="1601754463445">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1601494443956" />
-    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1601494443956">
+    <state width="1236" height="320" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.0.center" timestamp="1601754463445">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1601494443956" />
-    <state x="141" y="123" width="1074" height="738" key="SettingsEditor" timestamp="1601493320586">
+    <state width="1236" height="320" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.0.left" timestamp="1601754463445">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="123" width="1074" height="738" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1601493320586" />
+    <state width="1236" height="320" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.0.right" timestamp="1601754463445">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1236" height="320" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1601754463446">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1236" height="320" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1601754463446" />
+    <state width="1236" height="320" key="GridCell.Tab.1.center" timestamp="1601754463445">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1236" height="320" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.1.left" timestamp="1601754463445">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1236" height="320" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state width="1236" height="320" key="GridCell.Tab.1.right" timestamp="1601754463445">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1236" height="320" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1601754463445" />
+    <state x="170" y="146" key="Maven.ArtifactSearchDialog" timestamp="1601749492364">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="170" y="146" key="Maven.ArtifactSearchDialog/0.0.1280.984@0.0.1280.984" timestamp="1601749492364" />
+    <state x="141" y="123" width="1074" height="738" key="SettingsEditor" timestamp="1601747516333">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="141" y="123" width="1074" height="738" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1601747516333" />
     <state x="187" y="227" width="905" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601493418583">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
