@@ -11,11 +11,13 @@ public class WorkTest
                 "src\\test\\resources\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
+
         driver.get("https://www.google.com/");
 
         WebElement search_string = driver.findElement(By.cssSelector(".gLFyf"));
         search_string.sendKeys("How to test web pages with Selenium?");
         search_string.submit();
+
 
         driver.quit();
     }
