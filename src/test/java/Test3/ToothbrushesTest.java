@@ -36,13 +36,16 @@ public class ToothbrushesTest
     @Test
     public void Test() throws InterruptedException
     {
-        Assert.assertTrue(startPage.goToBeautyAndHealthPage());
-        Assert.assertTrue(beautyAndHealthPage.goToToothbrushesAndAccessoriesPage());
-        Assert.assertTrue(toothbrushesAndAccessoriesPage.goToToothbrushesPage());
+        startPage.goToBeautyAndHealthPage();
+        beautyAndHealthPage.goToToothbrushesAndAccessoriesPage();
+        toothbrushesAndAccessoriesPage.goToToothbrushesPage();
+
         toothbrushesPage.initValues();
+        toothbrushesPage.setMinPrice(999);
+        toothbrushesPage.setMaxPrice(1999);
         toothbrushesPage.clickAttToCart();
 
-        Thread.sleep(1000);
+        Thread.sleep(5000);
 
         //Assert.assertEquals("Киров", "Киров");
     }

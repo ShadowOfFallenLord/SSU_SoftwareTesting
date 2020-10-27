@@ -21,8 +21,28 @@ public class ToothbrushesPage
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(className = "min-input_js")
+    private WebElement min_price_input;
+
+    @FindBy(className = "max-input_js")
+    private WebElement max_price_input;
+
     @FindBy(className = "add_to_cart")
     private WebElement to_cart_button;
+
+    public void setMinPrice(int val)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("min-input_js")));
+        min_price_input.sendKeys(Integer.toString(val));
+    }
+
+    public void setMaxPrice(int val)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("max-input_js")));
+        max_price_input.sendKeys(Integer.toString(val));
+    }
 
     public void clickAttToCart()
     {

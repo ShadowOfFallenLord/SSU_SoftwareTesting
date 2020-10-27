@@ -57,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ToothbrushesTest.Test">
+  <component name="RunManager" selected="JUnit.ChangeCityTest.Test">
     <configuration name="WorkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WorkTest" />
       <module name="SSU_SoftwareTesting" />
@@ -130,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ToothbrushesTest.Test" />
         <item itemvalue="JUnit.ChangeCityTest.Test" />
+        <item itemvalue="JUnit.LoginTest.Test" />
+        <item itemvalue="JUnit.ToothbrushesTest.Test" />
         <item itemvalue="Application.WorkTest" />
         <item itemvalue="JUnit.ChangeCityTest" />
-        <item itemvalue="JUnit.LoginTest.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +174,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="423" y="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.984@0.0.1280.984" timestamp="1602274967600" />
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1602334096161">
+    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1603825165481">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1602334096161" />
-    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1602334096161">
+    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1603825165481" />
+    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1603825165481">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1602334096161" />
-    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1602334096161">
+    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1603825165481" />
+    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1603825165480">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1602334096161" />
-    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1602334096161">
+    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1603825165480" />
+    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1603825165481">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1602334096161" />
+    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1603825165481" />
     <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1602275688136">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -218,6 +218,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="187" y="227" width="905" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.984@0.0.1280.984" timestamp="1601493418583" />
+    <state x="22" y="152" key="new project wizard" timestamp="1603442614760">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="22" y="152" key="new project wizard/0.0.1280.984@0.0.1280.984" timestamp="1603442614760" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

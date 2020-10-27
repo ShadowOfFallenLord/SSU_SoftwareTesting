@@ -9,7 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ChangeCityTest
 {
-    public static Test2.StartPage startPage;
+    private static String baseCity = "Саратов";
+
+    public static StartPage startPage;
     public static WebDriver driver;
 
     @BeforeClass
@@ -18,14 +20,14 @@ public class ChangeCityTest
         System.setProperty("webdriver.chrome.driver","src\\test\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.citilink.ru/");
-        startPage = new Test2.StartPage(driver);
+        startPage = new StartPage(driver);
     }
 
     @AfterClass
     public static void Exit()
     {
         startPage.clickChouseCityButton();
-        startPage.clickCityButton("Саратов");
+        startPage.clickCityButton(baseCity);
         driver.quit();
     }
 

@@ -26,6 +26,8 @@ public class StartPage
     @FindBy(css = ".pseudo_dashed")
     private WebElement chouse_city_button;
 
+    private WebElement city;
+
     public void clickChouseCityButton()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -42,6 +44,7 @@ public class StartPage
 
     public void clickCityButton(String city_name)
     {
+        /*
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("search-city__item-a")));
         List<WebElement> cities = driver.findElements(By.className("search-city__item-a"));
@@ -61,5 +64,10 @@ public class StartPage
         {
             chouse_city_button.click();
         }
+        */
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(city_name)));
+        city = driver.findElement(By.partialLinkText(city_name));
+        city.click();
     }
 }
