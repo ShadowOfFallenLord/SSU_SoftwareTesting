@@ -4,12 +4,36 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(value = Parameterized.class)
 public class ChangeCityTest
 {
     private static String baseCity = "Саратов";
+    private String city;
+
+    public ChangeCityTest(String city)
+    {
+        this.city = city;
+    }
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> GetParams()
+    {
+        return Arrays.asList(new Object[][]{
+            { "Киров" },
+            { "Сочи" },
+            { "Азов" },
+            { "Белгород" },
+            { "Челябинск" }
+        });
+    }
 
     public static StartPage startPage;
     public static WebDriver driver;
@@ -38,9 +62,9 @@ public class ChangeCityTest
 
         startPage.clickChouseCityButton();
         // Хвалынска в списке нет
-        startPage.clickCityButton("Киров");
+        startPage.clickCityButton(city);
 
-        String city = startPage.getChouseCityButtonText();
-        Assert.assertEquals("Киров", city);
+        String current_city = startPage.getChouseCityButtonText();
+        Assert.assertEquals(city, current_city);
     }
 }
