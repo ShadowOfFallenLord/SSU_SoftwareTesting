@@ -26,21 +26,6 @@ public class BeautyAndHealthPage
 
     public void goToToothbrushesAndAccessoriesPage()
     {
-        /*
-        List<WebElement> links = driver.findElements(By.tagName("a"));
-        for(int i = 0; i < links.size(); i++)
-        {
-            WebElement t = links.get(i);
-            if(t.getText().equals("Зубные щетки и аксессуары"))
-            {
-                System.out.print(i);
-                t.click();
-                return true;
-            }
-        }
-        return false;
-        */
-
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Зубные щетки и аксессуары")));
         button = driver.findElement(By.partialLinkText("Зубные щетки и аксессуары"));

@@ -1,6 +1,7 @@
 package Test3;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,11 @@ public class ToothbrushesPage
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("min-input_js")));
+        for(int i = 0; i <= min_price_input.getAttribute("value").length(); i++)
+        {
+            min_price_input.sendKeys(Keys.BACK_SPACE);
+        }
+        min_price_input.sendKeys(Keys.BACK_SPACE);
         min_price_input.sendKeys(Integer.toString(val));
     }
 
@@ -41,6 +47,11 @@ public class ToothbrushesPage
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("max-input_js")));
+        for(int i = 0; i <= max_price_input.getAttribute("value").length(); i++)
+        {
+            max_price_input.sendKeys(Keys.BACK_SPACE);
+        }
+        min_price_input.sendKeys(Keys.BACK_SPACE);
         max_price_input.sendKeys(Integer.toString(val));
     }
 

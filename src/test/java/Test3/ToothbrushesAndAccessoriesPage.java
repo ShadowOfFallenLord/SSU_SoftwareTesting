@@ -26,21 +26,6 @@ public class ToothbrushesAndAccessoriesPage
 
     public void goToToothbrushesPage()
     {
-        /*
-        List<WebElement> links = driver.findElements(By.tagName("a"));
-        for(int i = 0; i < links.size(); i++)
-        {
-            WebElement t = links.get(i);
-            if(t.getText().equals("Зубные щетки"))
-            {
-                System.out.print(i);
-                t.click();
-                return true;
-            }
-        }
-        return false;
-        */
-
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Зубные щетки")));
         button = driver.findElement(By.partialLinkText("Зубные щетки"));

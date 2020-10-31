@@ -61,7 +61,6 @@ public class ChangeCityTest
         startPage.initValues();
 
         startPage.clickChouseCityButton();
-        // Хвалынска в списке нет
         startPage.clickCityButton(city);
 
         String current_city = startPage.getChouseCityButtonText();

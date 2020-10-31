@@ -44,27 +44,6 @@ public class StartPage
 
     public void clickCityButton(String city_name)
     {
-        /*
-        WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("search-city__item-a")));
-        List<WebElement> cities = driver.findElements(By.className("search-city__item-a"));
-        WebElement chouse_city_button = null;
-        for(int i = 0; i < cities.size(); i++)
-        {
-            WebElement t = cities.get(i);
-            String text = t.getText();
-            if(text.equals(city_name))
-            {
-                chouse_city_button = t;
-                break;
-            }
-        }
-
-        if(chouse_city_button != null)
-        {
-            chouse_city_button.click();
-        }
-        */
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(city_name)));
         city = driver.findElement(By.partialLinkText(city_name));

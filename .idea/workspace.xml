@@ -57,25 +57,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangeCityTest.Test">
+  <component name="RunManager" selected="JUnit.ToothbrushesTest.Test">
     <configuration name="WorkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WorkTest" />
       <module name="SSU_SoftwareTesting" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChangeCityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSU_SoftwareTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test2" />
-      <option name="MAIN_CLASS_NAME" value="Test2.ChangeCityTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,6 +97,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ToothbrushesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSU_SoftwareTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test3" />
+      <option name="MAIN_CLASS_NAME" value="Test3.ToothbrushesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ToothbrushesTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSU_SoftwareTesting" />
       <extension name="coverage">
@@ -130,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ToothbrushesTest.Test" />
+        <item itemvalue="JUnit.ToothbrushesTest" />
         <item itemvalue="JUnit.ChangeCityTest.Test" />
         <item itemvalue="JUnit.LoginTest.Test" />
-        <item itemvalue="JUnit.ToothbrushesTest.Test" />
         <item itemvalue="Application.WorkTest" />
-        <item itemvalue="JUnit.ChangeCityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +174,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="423" y="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.984@0.0.1280.984" timestamp="1602274967600" />
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1604067122265">
+    <state width="1236" height="259" key="GridCell.Tab.0.bottom" timestamp="1604117933777">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1604067122265" />
-    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1604067122265">
+    <state width="1236" height="259" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1604117933777" />
+    <state width="1236" height="259" key="GridCell.Tab.0.center" timestamp="1604117933777">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1604067122265" />
-    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1604067122265">
+    <state width="1236" height="259" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1604117933777" />
+    <state width="1236" height="259" key="GridCell.Tab.0.left" timestamp="1604117933777">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1604067122265" />
-    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1604067122265">
+    <state width="1236" height="259" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1604117933777" />
+    <state width="1236" height="259" key="GridCell.Tab.0.right" timestamp="1604117933777">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1604067122265" />
+    <state width="1236" height="259" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1604117933777" />
     <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1602275688136">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

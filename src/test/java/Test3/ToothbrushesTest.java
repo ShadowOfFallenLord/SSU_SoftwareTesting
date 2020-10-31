@@ -36,16 +36,18 @@ public class ToothbrushesTest
     @Test
     public void Test() throws InterruptedException
     {
-        startPage.goToBeautyAndHealthPage();
-        beautyAndHealthPage.goToToothbrushesAndAccessoriesPage();
-        toothbrushesAndAccessoriesPage.goToToothbrushesPage();
+        //startPage.goToBeautyAndHealthPage();
+        //beautyAndHealthPage.goToToothbrushesAndAccessoriesPage();
+        //toothbrushesAndAccessoriesPage.goToToothbrushesPage();
+
+        driver.get("https://www.citilink.ru/catalog/beauty_and_health/toothbrushes_and_aks/toothbrushes/");
 
         toothbrushesPage.initValues();
         toothbrushesPage.setMinPrice(999);
         toothbrushesPage.setMaxPrice(1999);
-        toothbrushesPage.clickAttToCart();
+        //toothbrushesPage.clickAttToCart();
 
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 
         //Assert.assertEquals("Киров", "Киров");
     }

@@ -26,22 +26,7 @@ public class StartPage
 
     public void goToBeautyAndHealthPage()
     {
-        /*
-        List<WebElement> links = driver.findElements(By.tagName("a"));
-        for(int i = 0; i < links.size(); i++)
-        {
-            WebElement t = links.get(i);
-            if(t.getText().equals("Красота и здоровье"))
-            {
-                System.out.print(i);
-                t.click();
-                return true;
-            }
-        }
-        return false;
-        */
-
-         WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Красота и здоровье")));
         button = driver.findElement(By.partialLinkText("Красота и здоровье"));
         button.click();
