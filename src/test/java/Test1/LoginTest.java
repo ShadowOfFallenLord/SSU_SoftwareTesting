@@ -1,5 +1,6 @@
 package Test1;
 
+
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -28,7 +29,6 @@ public class LoginTest
     @AfterClass
     public static void Exit()
     {
-        profilePage.logout();
         driver.quit();
     }
 
@@ -56,5 +56,7 @@ public class LoginTest
         String name = profilePage.getName();
         Thread.sleep(1);
         Assert.assertEquals("Алексей", name);
+
+        profilePage.logout();
     }
 }

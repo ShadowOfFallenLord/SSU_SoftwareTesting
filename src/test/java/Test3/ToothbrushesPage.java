@@ -1,5 +1,6 @@
 package Test3;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -31,35 +32,51 @@ public class ToothbrushesPage
     @FindBy(className = "add_to_cart")
     private WebElement to_cart_button;
 
-    public void setMinPrice(int val)
+    @FindBy(className = "js--popup-basket__close-btn")
+    private WebElement close_swimming_window;
+
+    private void clearInputField(WebElement element)
     {
+        element.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+    }
+
+    public void setMinPrice(int val) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("min-input_js")));
-        for(int i = 0; i <= min_price_input.getAttribute("value").length(); i++)
-        {
-            min_price_input.sendKeys(Keys.BACK_SPACE);
-        }
-        min_price_input.sendKeys(Keys.BACK_SPACE);
+
+        clearInputField(min_price_input);
         min_price_input.sendKeys(Integer.toString(val));
     }
 
-    public void setMaxPrice(int val)
-    {
+    public void setMaxPrice(int val) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("max-input_js")));
-        for(int i = 0; i <= max_price_input.getAttribute("value").length(); i++)
-        {
-            max_price_input.sendKeys(Keys.BACK_SPACE);
-        }
-        min_price_input.sendKeys(Keys.BACK_SPACE);
+
+        clearInputField(max_price_input);
         max_price_input.sendKeys(Integer.toString(val));
     }
 
-    public void clickAttToCart()
+    public void clickSubmitPriceFilers()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("max-input_js")));
+
+        max_price_input.sendKeys(Keys.ENTER);
+    }
+
+    public void clickAddToCart()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("add_to_cart")));
 
         to_cart_button.click();
+    }
+
+    public void closeSwimmingWindow()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("js--popup-basket__close-btn")));
+
+        close_swimming_window.click();
     }
 }

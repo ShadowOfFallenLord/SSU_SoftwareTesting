@@ -1,7 +1,7 @@
 package Test3;
 
+
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -45,7 +45,10 @@ public class ToothbrushesTest
         toothbrushesPage.initValues();
         toothbrushesPage.setMinPrice(999);
         toothbrushesPage.setMaxPrice(1999);
-        //toothbrushesPage.clickAttToCart();
+        toothbrushesPage.clickSubmitPriceFilers();
+        toothbrushesPage.clickAddToCart();
+        toothbrushesPage.initValues();
+        toothbrushesPage.closeSwimmingWindow();
 
         Thread.sleep(10000);
 
