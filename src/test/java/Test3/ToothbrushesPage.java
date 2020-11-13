@@ -29,11 +29,17 @@ public class ToothbrushesPage
     @FindBy(className = "max-input_js")
     private WebElement max_price_input;
 
+    @FindBy(className = "subcategory-product-item__price-num")
+    private WebElement record_price;
+
     @FindBy(className = "add_to_cart")
     private WebElement to_cart_button;
 
     @FindBy(className = "js--popup-basket__close-btn")
     private WebElement close_swimming_window;
+
+    @FindBy(id = "header_basket_cost")
+    private WebElement cart_price;
 
     private void clearInputField(WebElement element)
     {
@@ -64,6 +70,14 @@ public class ToothbrushesPage
         max_price_input.sendKeys(Keys.ENTER);
     }
 
+    public Integer getRecordPrice()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("subcategory-product-item__price-num")));
+
+        return Integer.parseInt(record_price.getText());
+    }
+
     public void clickAddToCart()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -78,5 +92,13 @@ public class ToothbrushesPage
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("js--popup-basket__close-btn")));
 
         close_swimming_window.click();
+    }
+
+    public Integer getCartPrice()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_basket_cost")));
+
+        return Integer.parseInt(cart_price.getText());
     }
 }

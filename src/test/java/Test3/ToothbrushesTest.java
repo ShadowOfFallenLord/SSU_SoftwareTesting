@@ -2,6 +2,7 @@ package Test3;
 
 
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -46,12 +47,19 @@ public class ToothbrushesTest
         toothbrushesPage.setMinPrice(999);
         toothbrushesPage.setMaxPrice(1999);
         toothbrushesPage.clickSubmitPriceFilers();
+
+        Thread.sleep(1000);
+
+        toothbrushesPage.initValues();
+        Integer expected = toothbrushesPage.getRecordPrice();
+
         toothbrushesPage.clickAddToCart();
         toothbrushesPage.initValues();
         toothbrushesPage.closeSwimmingWindow();
 
-        Thread.sleep(10000);
+        toothbrushesPage.initValues();
+        Integer actual = toothbrushesPage.getCartPrice();
 
-        //Assert.assertEquals("Киров", "Киров");
+        Assert.assertEquals(expected, actual);
     }
 }
