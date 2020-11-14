@@ -57,15 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangeCityTest.Test">
-    <configuration name="All in SSU_SoftwareTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSU_SoftwareTesting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Test_3_Toothbrushes.Test">
     <configuration name="ChangeCityTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSU_SoftwareTesting" />
       <extension name="coverage">
@@ -82,33 +74,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_1_Login.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSU_SoftwareTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test1" />
-      <option name="MAIN_CLASS_NAME" value="Test1.LoginTest" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_1_Login" />
       <option name="METHOD_NAME" value="Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToothbrushesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_2_City.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSU_SoftwareTesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test3.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Test3" />
-      <option name="MAIN_CLASS_NAME" value="Test3.ToothbrushesTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_2_City" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_3_Toothbrushes.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSU_SoftwareTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_3_Toothbrushes" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test_3_Toothbrushes.Test" />
+        <item itemvalue="JUnit.Test_2_City.Test" />
+        <item itemvalue="JUnit.Test_1_Login.Test" />
         <item itemvalue="JUnit.ChangeCityTest.Test" />
         <item itemvalue="JUnit.ToothbrushesTest.Test" />
-        <item itemvalue="JUnit.LoginTest.Test" />
-        <item itemvalue="JUnit.ToothbrushesTest" />
-        <item itemvalue="JUnit.All in SSU_SoftwareTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -163,10 +166,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="120" y="65" key="#Project_Structure" timestamp="1605338636169">
+    <state x="120" y="65" key="#Project_Structure" timestamp="1605354612598">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="120" y="65" key="#Project_Structure/0.0.1280.984@0.0.1280.984" timestamp="1605338636169" />
+    <state x="120" y="65" key="#Project_Structure/0.0.1280.984@0.0.1280.984" timestamp="1605354612598" />
     <state x="327" y="415" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601749686315">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -175,26 +178,30 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="423" y="356" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.984@0.0.1280.984" timestamp="1602274967600" />
+    <state x="137" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605354338521">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="137" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.984@0.0.1280.984" timestamp="1605354338521" />
     <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1605336433752">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1605336433752" />
-    <state width="1236" height="254" key="GridCell.Tab.0.bottom" timestamp="1605340121553">
+    <state width="1236" height="254" key="GridCell.Tab.0.bottom" timestamp="1605365796662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1605340121553" />
-    <state width="1236" height="254" key="GridCell.Tab.0.center" timestamp="1605340121553">
+    <state width="1236" height="254" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
+    <state width="1236" height="254" key="GridCell.Tab.0.center" timestamp="1605365796662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1605340121553" />
-    <state width="1236" height="254" key="GridCell.Tab.0.left" timestamp="1605340121553">
+    <state width="1236" height="254" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
+    <state width="1236" height="254" key="GridCell.Tab.0.left" timestamp="1605365796661">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1605340121553" />
-    <state width="1236" height="254" key="GridCell.Tab.0.right" timestamp="1605340121553">
+    <state width="1236" height="254" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1605365796661" />
+    <state width="1236" height="254" key="GridCell.Tab.0.right" timestamp="1605365796662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1605340121553" />
+    <state width="1236" height="254" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
     <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1602275688136">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -215,10 +222,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="170" y="146" key="Maven.ArtifactSearchDialog/0.0.1280.984@0.0.1280.984" timestamp="1601749492364" />
-    <state x="141" y="123" width="1074" height="738" key="SettingsEditor" timestamp="1605338624783">
+    <state x="141" y="123" width="1074" height="738" key="SettingsEditor" timestamp="1605354624429">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="123" width="1074" height="738" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1605338624783" />
+    <state x="141" y="123" width="1074" height="738" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1605354624429" />
     <state x="187" y="227" width="905" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601493418583">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

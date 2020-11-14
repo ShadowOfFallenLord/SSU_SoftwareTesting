@@ -1,56 +1,31 @@
-package Test3;
-
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ToothbrushesPage
+public class ToothbrushesPage extends PageBaseClass
 {
-    private WebDriver driver;
-    public ToothbrushesPage(WebDriver driver)
+    public ToothbrushesPage(WebDriver diver)
     {
-        this.driver = driver;
+        super(diver);
     }
-
-    public void initValues()
-    {
-        PageFactory.initElements(driver, this);
-    }
-
-    @FindBy(className = "min-input_js")
-    private WebElement min_price_input;
-
-    @FindBy(className = "max-input_js")
-    private WebElement max_price_input;
-
-    @FindBy(className = "subcategory-product-item__price-num")
-    private WebElement record_price;
-
-    @FindBy(className = "product_amount_control")
-    private WebElement product_count;
-
-    @FindBy(className = "add_to_cart")
-    private WebElement to_cart_button;
-
-    @FindBy(className = "js--popup-basket__close-btn")
-    private WebElement close_swimming_window;
-
-    @FindBy(id = "header_basket_cost")
-    private WebElement cart_price;
-
-    @FindBy(className = "cart")
-    private WebElement cart;
 
     private void clearInputField(WebElement element)
     {
         element.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
     }
+
+    //region Min_Max_Price
+    @FindBy(className = "min-input_js")
+    private WebElement min_price_input;
+
+    @FindBy(className = "max-input_js")
+    private WebElement max_price_input;
 
     public void setMinPrice(int val) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -68,6 +43,17 @@ public class ToothbrushesPage
         max_price_input.sendKeys(Integer.toString(val));
         max_price_input.sendKeys(Keys.ENTER);
     }
+    //endregion
+
+    //region Record
+    @FindBy(className = "subcategory-product-item__price-num")
+    private WebElement record_price;
+
+    @FindBy(className = "product_amount_control")
+    private WebElement product_count;
+
+    @FindBy(className = "add_to_cart")
+    private WebElement to_cart_button;
 
     public Integer getRecordPrice()
     {
@@ -92,6 +78,11 @@ public class ToothbrushesPage
 
         to_cart_button.click();
     }
+    //endregion
+
+    //region SwimmingWindow
+    @FindBy(className = "js--popup-basket__close-btn")
+    private WebElement close_swimming_window;
 
     public void closeSwimmingWindow()
     {
@@ -100,6 +91,14 @@ public class ToothbrushesPage
 
         close_swimming_window.click();
     }
+    //endregion
+
+    //region Cart
+    @FindBy(id = "header_basket_cost")
+    private WebElement cart_price;
+
+    @FindBy(className = "cart")
+    private WebElement cart;
 
     public Integer getCartPrice()
     {
@@ -116,4 +115,5 @@ public class ToothbrushesPage
 
         cart.click();
     }
+    //endregion
 }
