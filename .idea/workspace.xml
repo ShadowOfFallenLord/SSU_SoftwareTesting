@@ -47,7 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -166,10 +166,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="120" y="65" key="#Project_Structure" timestamp="1605354612598">
+    <state x="120" y="65" key="#Project_Structure" timestamp="1605369430357">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="120" y="65" key="#Project_Structure/0.0.1280.984@0.0.1280.984" timestamp="1605354612598" />
+    <state x="120" y="65" key="#Project_Structure/0.0.1280.984@0.0.1280.984" timestamp="1605369430357" />
     <state x="327" y="415" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601749686315">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -186,22 +186,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1605336433752" />
-    <state width="1236" height="254" key="GridCell.Tab.0.bottom" timestamp="1605365796662">
+    <state width="1236" height="254" key="GridCell.Tab.0.bottom" timestamp="1605367598764">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
-    <state width="1236" height="254" key="GridCell.Tab.0.center" timestamp="1605365796662">
+    <state width="1236" height="254" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1605367598764" />
+    <state width="1236" height="254" key="GridCell.Tab.0.center" timestamp="1605367598764">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
-    <state width="1236" height="254" key="GridCell.Tab.0.left" timestamp="1605365796661">
+    <state width="1236" height="254" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1605367598764" />
+    <state width="1236" height="254" key="GridCell.Tab.0.left" timestamp="1605367598764">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1605365796661" />
-    <state width="1236" height="254" key="GridCell.Tab.0.right" timestamp="1605365796662">
+    <state width="1236" height="254" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1605367598764" />
+    <state width="1236" height="254" key="GridCell.Tab.0.right" timestamp="1605367598764">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="254" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1605365796662" />
+    <state width="1236" height="254" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1605367598764" />
     <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1602275688136">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

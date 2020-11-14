@@ -18,6 +18,7 @@ public class Test_1_Login
 
     private static String login = "dfhrhfan12@yandex.ru";
     private static String password = "159875321";
+    private static String expectedName = "Алексей";
 
     @BeforeClass
     public static void InitValues()
@@ -57,7 +58,7 @@ public class Test_1_Login
         Thread.sleep(1);
         String name = indexPage.getAccountName();
         Thread.sleep(1);
-        Assert.assertEquals("Алексей", name);
+        Assert.assertEquals(expectedName, name);
 
         indexPage.logoutAccount();
     }

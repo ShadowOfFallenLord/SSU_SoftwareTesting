@@ -123,7 +123,7 @@ public class IndexPage extends PageBaseClass
 
     public void clickCityButton(String city_name)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(city_name)));
         current_city = driver.findElement(By.partialLinkText(city_name));
         current_city.click();

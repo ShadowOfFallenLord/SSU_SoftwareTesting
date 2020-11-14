@@ -19,7 +19,7 @@ public class ToothbrushesAndAccessoriesPage extends PageBaseClass
 
     public void goToToothbrushesPage()
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Зубные щетки")));
         toothbrushesButton.click();
     }
