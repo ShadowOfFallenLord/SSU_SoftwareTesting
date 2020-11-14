@@ -14,6 +14,7 @@ public class ToothbrushesTest
     public static BeautyAndHealthPage beautyAndHealthPage;
     public static ToothbrushesAndAccessoriesPage toothbrushesAndAccessoriesPage;
     public static ToothbrushesPage toothbrushesPage;
+    public static CartPage cartPage;
     public static WebDriver driver;
 
     @BeforeClass
@@ -26,11 +27,16 @@ public class ToothbrushesTest
         beautyAndHealthPage = new BeautyAndHealthPage(driver);
         toothbrushesAndAccessoriesPage = new ToothbrushesAndAccessoriesPage(driver);
         toothbrushesPage = new ToothbrushesPage(driver);
+        cartPage = new CartPage(driver);
     }
 
     @AfterClass
     public static void Exit()
     {
+        toothbrushesPage.openCartPage();
+        cartPage.initValues();
+        cartPage.clearCart();
+
         driver.quit();
     }
 
@@ -45,14 +51,15 @@ public class ToothbrushesTest
 
         toothbrushesPage.initValues();
         toothbrushesPage.setMinPrice(999);
+        Thread.sleep(1);
         toothbrushesPage.setMaxPrice(1999);
-        toothbrushesPage.clickSubmitPriceFilers();
 
         Thread.sleep(1000);
 
         toothbrushesPage.initValues();
-        Integer expected = toothbrushesPage.getRecordPrice();
+        Integer expected = toothbrushesPage.getRecordPrice() * 2;
 
+        toothbrushesPage.setProductCount(2);
         toothbrushesPage.clickAddToCart();
         toothbrushesPage.initValues();
         toothbrushesPage.closeSwimmingWindow();

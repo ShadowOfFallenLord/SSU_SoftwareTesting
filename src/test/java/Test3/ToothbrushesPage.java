@@ -32,6 +32,9 @@ public class ToothbrushesPage
     @FindBy(className = "subcategory-product-item__price-num")
     private WebElement record_price;
 
+    @FindBy(className = "product_amount_control")
+    private WebElement product_count;
+
     @FindBy(className = "add_to_cart")
     private WebElement to_cart_button;
 
@@ -40,6 +43,9 @@ public class ToothbrushesPage
 
     @FindBy(id = "header_basket_cost")
     private WebElement cart_price;
+
+    @FindBy(className = "cart")
+    private WebElement cart;
 
     private void clearInputField(WebElement element)
     {
@@ -60,13 +66,6 @@ public class ToothbrushesPage
 
         clearInputField(max_price_input);
         max_price_input.sendKeys(Integer.toString(val));
-    }
-
-    public void clickSubmitPriceFilers()
-    {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("max-input_js")));
-
         max_price_input.sendKeys(Keys.ENTER);
     }
 
@@ -76,6 +75,14 @@ public class ToothbrushesPage
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("subcategory-product-item__price-num")));
 
         return Integer.parseInt(record_price.getText());
+    }
+
+    public void setProductCount(int val) throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("product_amount_control")));
+
+        clearInputField(product_count);
+        product_count.sendKeys(Integer.toString(val));
     }
 
     public void clickAddToCart()
@@ -100,5 +107,13 @@ public class ToothbrushesPage
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_basket_cost")));
 
         return Integer.parseInt(cart_price.getText());
+    }
+
+    public void openCartPage()
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("cart")));
+
+        cart.click();
     }
 }
