@@ -2,51 +2,46 @@ package Tests;
 
 import Configs.TestsConfiguration;
 import Pages.*;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test_3_Toothbrushes
 {
+    //region Driver
     public static WebDriver driver;
-    public static IndexPage indexPage;
-    public static BeautyAndHealthPage beautyAndHealthPage;
-    public static ToothbrushesAndAccessoriesPage toothbrushesAndAccessoriesPage;
-    public static ToothbrushesPage toothbrushesPage;
-    public static CartPage cartPage;
 
     @BeforeClass
-    public static void InitValues()
+    public static void InitProperties()
     {
         System.setProperty(TestsConfiguration.driverName, TestsConfiguration.driverPath);
         driver = new ChromeDriver();
-        driver.get(TestsConfiguration.testSiteUrl);
-        indexPage = new IndexPage(driver);
-        beautyAndHealthPage = new BeautyAndHealthPage(driver);
-        toothbrushesAndAccessoriesPage = new ToothbrushesAndAccessoriesPage(driver);
-        toothbrushesPage = new ToothbrushesPage(driver);
-        cartPage = new CartPage(driver);
     }
 
     @AfterClass
-    public static void Exit() throws InterruptedException
+    public static void ExitDriver()
     {
-        toothbrushesPage.openCartPage();
-        cartPage.initValues();
-        cartPage.clearCart();
-
         driver.quit();
+    }
+    //endregion
+
+    public IndexPage indexPage = new IndexPage(driver);
+    public BeautyAndHealthPage beautyAndHealthPage = new BeautyAndHealthPage(driver);
+    public ToothbrushesAndAccessoriesPage toothbrushesAndAccessoriesPage = new ToothbrushesAndAccessoriesPage(driver);
+    public ToothbrushesPage toothbrushesPage = new ToothbrushesPage(driver);
+    public CartPage cartPage = new CartPage(driver);
+
+    @Before
+    public void InitValues()
+    {
+        driver.get(TestsConfiguration.testSiteUrl);
+        indexPage.initValues();
+        indexPage.openOldSiteVersion();
     }
 
     @Test
     public void Test() throws InterruptedException
     {
-        indexPage.initValues();
-        indexPage.openOldSiteVersion();
-
         indexPage.initValues();
         indexPage.goToBeautyAndHealthPage();
         beautyAndHealthPage.initValues();
@@ -75,5 +70,13 @@ public class Test_3_Toothbrushes
         Integer actual = toothbrushesPage.getCartPrice();
 
         Assert.assertEquals(expected, actual);
+    }
+
+    @After
+    public void Exit()
+    {
+        toothbrushesPage.openCartPage();
+        cartPage.initValues();
+        cartPage.clearCart();
     }
 }

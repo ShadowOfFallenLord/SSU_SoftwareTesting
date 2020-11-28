@@ -1,53 +1,58 @@
 package Tests;
 
+import Configs.RuleOnFail;
 import Configs.TestsConfiguration;
 import Pages.IndexPage;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.openqa.selenium.By;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test_1_Login
 {
-    public static IndexPage indexPage;
+    //region Driver
     public static WebDriver driver;
 
-    private static String login = "dfhrhfan12@yandex.ru";
-    private static String password = "159875321";
-    private static String expectedName = "Алексей";
-
     @BeforeClass
-    public static void InitValues()
+    public static void InitProperties()
     {
         System.setProperty(TestsConfiguration.driverName, TestsConfiguration.driverPath);
         driver = new ChromeDriver();
-        driver.get(TestsConfiguration.testSiteUrl);
-        indexPage = new IndexPage(driver);
     }
 
     @AfterClass
-    public static void Exit()
+    public static void ExitDriver()
     {
         driver.quit();
+    }
+    //endregion
+
+    public IndexPage indexPage = new IndexPage(driver);
+
+    @Rule
+    public RuleOnFail watchman= new RuleOnFail(driver);
+
+    private String login = "dfhrhfan12@yandex.ru";
+    private String password = "159875321";
+    private String expectedName = "Алексей";
+
+    @Before
+    public void InitValues()
+    {
+        driver.get(TestsConfiguration.testSiteUrl);
+        indexPage.initValues();
+        indexPage.openOldSiteVersion();
     }
 
     @Test
     public void Test() throws InterruptedException
     {
         indexPage.initValues();
-        indexPage.openOldSiteVersion();
-
-        indexPage.initValues();
         indexPage.openLoginContainer();
+        indexPage.initValues();
         indexPage.inputLogin(login);
+        indexPage.initValues();
         indexPage.inputPass(password);
 
-        WebElement captcha_elem = driver.findElement(By.id("captcha_popup-login"));
-        captcha_elem.click();
         // Requires manual input of captcha on the site
         Thread.sleep(10000);
 
@@ -59,7 +64,12 @@ public class Test_1_Login
         String name = indexPage.getAccountName();
         Thread.sleep(1);
         Assert.assertEquals(expectedName, name);
+    }
 
+    @After
+    public void Logout()
+    {
+        indexPage.initValues();
         indexPage.logoutAccount();
     }
 }
